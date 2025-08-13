@@ -6,7 +6,7 @@ const Bookmarks = ({bookmarks,readingTime}) => {
         <div className='md:w-1/3 bg-sky-200 p-2 m-4'>
             <h3>Reading Time:{readingTime}</h3>
             {
-                bookmarks.map(bookmark => <Bookmark key={bookmark.id} bookmark={bookmark}></Bookmark>)
+                bookmarks.map((bookmark,idx) => <Bookmark key={idx} bookmark={bookmark}></Bookmark>)
             }   
             
         </div>
